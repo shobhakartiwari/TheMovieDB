@@ -14,6 +14,8 @@
 		EED7AF7E24B286D100C18E24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED7AF7D24B286D100C18E24 /* Assets.xcassets */; };
 		EED7AF8124B286D100C18E24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED7AF7F24B286D100C18E24 /* LaunchScreen.storyboard */; };
 		EED7AF8C24B286D100C18E24 /* TheMovieDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED7AF8B24B286D100C18E24 /* TheMovieDBTests.swift */; };
+		EED7AF9A24B287F200C18E24 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED7AF9924B287F200C18E24 /* Movies.swift */; };
+		EED7AF9C24B287FF00C18E24 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED7AF9B24B287FF00C18E24 /* Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		EED7AF8724B286D100C18E24 /* TheMovieDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMovieDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED7AF8B24B286D100C18E24 /* TheMovieDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieDBTests.swift; sourceTree = "<group>"; };
 		EED7AF8D24B286D100C18E24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED7AF9924B287F200C18E24 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		EED7AF9B24B287FF00C18E24 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,9 @@
 		EED7AF6824B286CB00C18E24 = {
 			isa = PBXGroup;
 			children = (
+				EED7AF9824B2878000C18E24 /* Controller */,
+				EED7AF9724B2877B00C18E24 /* View */,
+				EED7AF9624B2876D00C18E24 /* Model */,
 				EED7AF7324B286CB00C18E24 /* TheMovieDB */,
 				EED7AF8A24B286D100C18E24 /* TheMovieDBTests */,
 				EED7AF7224B286CB00C18E24 /* Products */,
@@ -97,6 +104,29 @@
 				EED7AF8D24B286D100C18E24 /* Info.plist */,
 			);
 			path = TheMovieDBTests;
+			sourceTree = "<group>";
+		};
+		EED7AF9624B2876D00C18E24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EED7AF9924B287F200C18E24 /* Movies.swift */,
+				EED7AF9B24B287FF00C18E24 /* Networking.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EED7AF9724B2877B00C18E24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EED7AF9824B2878000C18E24 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +231,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED7AF7924B286CB00C18E24 /* ViewController.swift in Sources */,
+				EED7AF9C24B287FF00C18E24 /* Networking.swift in Sources */,
 				EED7AF7524B286CB00C18E24 /* AppDelegate.swift in Sources */,
+				EED7AF9A24B287F200C18E24 /* Movies.swift in Sources */,
 				EED7AF7724B286CB00C18E24 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
