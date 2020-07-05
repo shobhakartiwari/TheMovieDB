@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-/*Singleton Class for storing the urlPath and Image Path */
+/*Singleton Class for storing the urlPath and Image Path to be used for networking */
 class UrlPath {
    static let path = UrlPath()
    private init () {}
@@ -21,7 +21,6 @@ class UrlPath {
    func sharePathImg()->String {
        return image_url_path
    }
-    
     
 }
 
