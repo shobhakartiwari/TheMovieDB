@@ -32,9 +32,9 @@ extension UILabel {
             self.adjustsFontSizeToFitWidth = true
         } else {
             
-                   self.textAlignment = .center
-                   self.backgroundColor = .lightGray
-                   self.adjustsFontSizeToFitWidth = true
+           self.textAlignment = .center
+           self.backgroundColor = .lightGray
+           self.adjustsFontSizeToFitWidth = true
         
         }
        
