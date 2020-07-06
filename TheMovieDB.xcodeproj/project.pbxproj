@@ -20,6 +20,7 @@
 		EED7AFA124B28C7C00C18E24 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED7AFA024B28C7C00C18E24 /* DetailViewController.swift */; };
 		EED7AFA424B297CB00C18E24 /* ReusableExtenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED7AFA324B297CB00C18E24 /* ReusableExtenstions.swift */; };
 		EED7AFA624B297EB00C18E24 /* UrlPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED7AFA524B297EB00C18E24 /* UrlPath.swift */; };
+		EED7AFAA24B2ED0800C18E24 /* ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED7AFA924B2ED0800C18E24 /* ReadMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		EED7AFA024B28C7C00C18E24 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EED7AFA324B297CB00C18E24 /* ReusableExtenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableExtenstions.swift; sourceTree = "<group>"; };
 		EED7AFA524B297EB00C18E24 /* UrlPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlPath.swift; sourceTree = "<group>"; };
+		EED7AFA924B2ED0800C18E24 /* ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		EED7AF6824B286CB00C18E24 = {
 			isa = PBXGroup;
 			children = (
+				EED7AFA824B2ECC700C18E24 /* ReadMe */,
 				EED7AFA724B2981200C18E24 /* Constants */,
 				EED7AFA224B297AC00C18E24 /* Extensions */,
 				EED7AF9724B2877B00C18E24 /* View */,
@@ -163,6 +166,14 @@
 				EED7AFA524B297EB00C18E24 /* UrlPath.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		EED7AFA824B2ECC700C18E24 /* ReadMe */ = {
+			isa = PBXGroup;
+			children = (
+				EED7AFA924B2ED0800C18E24 /* ReadMe.swift */,
+			);
+			path = ReadMe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +280,7 @@
 				EED7AF7924B286CB00C18E24 /* MainViewController.swift in Sources */,
 				EED7AF9C24B287FF00C18E24 /* Networking.swift in Sources */,
 				EED7AF9E24B289D900C18E24 /* MovieCell.swift in Sources */,
+				EED7AFAA24B2ED0800C18E24 /* ReadMe.swift in Sources */,
 				EED7AFA424B297CB00C18E24 /* ReusableExtenstions.swift in Sources */,
 				EED7AFA624B297EB00C18E24 /* UrlPath.swift in Sources */,
 				EED7AF7524B286CB00C18E24 /* AppDelegate.swift in Sources */,
