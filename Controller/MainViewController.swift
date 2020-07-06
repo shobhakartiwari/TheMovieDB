@@ -15,9 +15,6 @@ class MainViewController: UIViewController {
    
     @IBOutlet weak var moviesTableView: UITableView!
     let searchcontroller = UISearchController(searchResultsController: nil);
-//    let dummyArray : [UIColor] = [.red , .blue , .black , .gray]  // dummy array to test functionality . will remove later
-//    let arrayStrings : [String] = ["Red" , "Blue" , "Black" , "Gray"]
-    
     var movies = [Movie]()
     var networkHandler = Networking()
     var filteredMovs = [Movie]()
@@ -36,6 +33,16 @@ class MainViewController: UIViewController {
     var searchPlaceHolder : String {
        return "Enter a movie title to search"
     }
+    var ratings : String {
+        return "Ratings: "
+    }
+    var genreids : String {
+        return "Genre Ids: "
+    }
+    var vote_count : String {
+        return "Vote Count: "
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,18 +67,18 @@ class MainViewController: UIViewController {
 extension MainViewController : UITableViewDataSource  {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // check if movie is filtered or not and getting the count we need depending on that
-        let count = (isfiltered) ? filteredMovs.count :  movies.count
-        return count
+        let moviess : [Movie] = (isfiltered == true) ? filteredMovs :  movies
+        return moviess.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell" , for: indexPath) as! MovieCell
-        guard let url = URL(string: UrlPath.path.sharePathImg() + movies[indexPath.row].poster_path) else {return UITableViewCell()}
+        let moviess : [Movie] = (isfiltered == true) ? filteredMovs :  movies
+        guard let url = URL(string: UrlPath.path.sharePathImg() + moviess[indexPath.row].poster_path) else {return UITableViewCell()}
         let data = try? Data(contentsOf: url)
         guard let datac = data else  {return UITableViewCell()}
         // moviees depending on search
-        let moviess : [Movie] = (isfiltered) ? filteredMovs : movies
         cell.movieimage.beautify(image: UIImage(data: datac)!)
-        cell.title.beautify(str: titleHelper + moviess[indexPath.row].title )
+        cell.title.beautify(str: titleHelper +  moviess[indexPath.row].title )
         cell.popularityScore.beautify(str: populaHelper + String(moviess[indexPath.row].popularity))
         cell.releaseYear.beautify(str: releaseYHelper + GetReleaseYear(date: moviess[indexPath.row].release_date))
         cell.containerView.Decorate()
@@ -85,9 +92,20 @@ extension MainViewController : UITableViewDelegate   {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let storyB = UIStoryboard(name: "Main", bundle: nil)
+        let moviess : [Movie] = (isfiltered == true) ? filteredMovs :  movies
+        guard let url = URL(string: UrlPath.path.sharePathImg() + moviess[indexPath.row].poster_path) else {return}
+        let data = try? Data(contentsOf: url)
+        guard let datac = data else  {return}
         guard let detVc = storyB.instantiateViewController(identifier: "DetailViewController") as? DetailViewController else {return}
-        let moviess : [Movie] = (isfiltered) ? filteredMovs : movies
+        detVc.overtext =  movies[indexPath.row].overview
+        detVc.image = UIImage(data: datac)!
         detVc.navigationItem.title = moviess[indexPath.row].title
+        detVc.ratings = ratings + String(moviess[indexPath.row].vote_average)
+        detVc.releasedate = releaseYHelper +  moviess[indexPath.row].release_date
+        detVc.genere = genreids + getStrings(for:  moviess[indexPath.row].genre_ids)
+        detVc.popularity = populaHelper +  String(moviess[indexPath.row].popularity)
+        detVc.vote_count = vote_count + String(moviess[indexPath.row].vote_count)
+        detVc.titles = titleHelper +  moviess[indexPath.row].title
         navigationController?.pushViewController(detVc, animated: true)
     }
 }
@@ -138,7 +156,7 @@ extension MainViewController {
        }
 }
 
-//MARK:- Se
+//MARK:- filtering
 extension MainViewController {
     func filteredMovies (for searchtext: String ) {
         filteredMovs = movies.filter { movie in

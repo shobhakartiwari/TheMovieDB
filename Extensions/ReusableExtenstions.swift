@@ -32,14 +32,11 @@ extension UILabel {
             self.numberOfLines = 0
             self.adjustsFontSizeToFitWidth = true
         } else {
-            
            self.textAlignment = .center
            self.backgroundColor = .darkGray
            self.adjustsFontSizeToFitWidth = true
             self.textColor = .magenta
-        
         }
-       
     }
 }
 
