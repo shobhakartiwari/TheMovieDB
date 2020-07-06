@@ -21,3 +21,11 @@ The Movie DB challenge . Starting July 5 5:10 PM Eastern Time .
 ![Screen Shot 2020-07-05 at 11 56 35 PM](https://user-images.githubusercontent.com/25472553/86557343-79666f80-bf1b-11ea-8471-9dbe16d59f6e.png)
 ![Screen Shot 2020-07-05 at 11 56 59 PM](https://user-images.githubusercontent.com/25472553/86557344-79666f80-bf1b-11ea-8617-153db9c5fefd.png)
 
+
+![Screen Shot 2020-07-06 at 12 09 43 AM](https://user-images.githubusercontent.com/25472553/86557880-3ad1b480-bf1d-11ea-9400-ab780a19ff2e.png)
+![Screen Shot 2020-07-06 at 12 09 55 AM](https://user-images.githubusercontent.com/25472553/86557887-3c9b7800-bf1d-11ea-8652-3b0ead9886c6.png)
+![Screen Shot 2020-07-06 at 12 10 07 AM](https://user-images.githubusercontent.com/25472553/86557888-3d340e80-bf1d-11ea-8d4d-84523dd5bfea.png)
+![Screen Shot 2020-07-06 at 12 10 14 AM](https://user-images.githubusercontent.com/25472553/86557890-3dcca500-bf1d-11ea-9962-738baca2ab80.png)
+![Screen Shot 2020-07-06 at 12 10 39 AM](https://user-images.githubusercontent.com/25472553/86557891-3e653b80-bf1d-11ea-885d-9f23279a7741.png)
+![Screen Shot 2020-07-06 at 12 10 54 AM](https://user-images.githubusercontent.com/25472553/86557892-3e653b80-bf1d-11ea-8bc7-19610a923f59.png)
+
