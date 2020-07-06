@@ -87,11 +87,13 @@ extension MainViewController  {
             moviesTableView.Beautify()
             navigationItem.title = navtTile
     }
-    
+    // grap the year of release. I found no need for date formater since the release year is in string and with "-" separator 
     func GetReleaseYear (date : String ) -> String {
            let y_m_d = date.components(separatedBy: "-")
            return y_m_d[0]
    }
+    
+    // Configurating the tableview 
     func ConfigureCellView() {
         moviesTableView.rowHeight = UITableView.automaticDimension
         moviesTableView.estimatedRowHeight = 200
