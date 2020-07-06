@@ -8,6 +8,9 @@
 
 import UIKit
 
+/*
+   Checking Landscape mode : View can now be in landscape and portrait as well
+ */
 class MainViewController: UIViewController {
    
     @IBOutlet weak var moviesTableView: UITableView!
