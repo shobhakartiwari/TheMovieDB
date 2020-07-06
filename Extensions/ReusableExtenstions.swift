@@ -36,9 +36,23 @@ extension UILabel {
            self.textAlignment = .center
            self.backgroundColor = .darkGray
            self.adjustsFontSizeToFitWidth = true
+            self.textColor = .magenta
         
         }
        
+    }
+}
+
+extension UITextView  {
+    func beautify(str: String ) {
+        self.text = str
+        self.backgroundColor = .darkGray
+        self.textAlignment = .center
+        self.layoutIfNeeded()
+        self.font = .boldSystemFont(ofSize: 21)
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor.blue.cgColor
+        self.textColor = .blue
     }
 }
 
