@@ -8,4 +8,11 @@ The Movie DB challenge . Starting July 5 5:10 PM Eastern Time .
 
 
 
+![Screen Shot 2020-07-05 at 7 37 49 PM](https://user-images.githubusercontent.com/25472553/86545870-401c0880-bef7-11ea-8680-8cfcb7a3ab7a.png)
+![Screen Shot 2020-07-05 at 7 37 55 PM](https://user-images.githubusercontent.com/25472553/86545871-41e5cc00-bef7-11ea-876a-2a5b10e5fe09.png)
+![Screen Shot 2020-07-05 at 7 38 15 PM](https://user-images.githubusercontent.com/25472553/86545872-427e6280-bef7-11ea-83a9-fb75037116f5.png)
+![Screen Shot 2020-07-05 at 7 38 21 PM](https://user-images.githubusercontent.com/25472553/86545873-4316f900-bef7-11ea-9751-ea1142ee4398.png)
+
+
+
 
