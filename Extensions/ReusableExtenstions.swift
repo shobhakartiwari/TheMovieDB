@@ -11,12 +11,13 @@ import UIKit
 
 extension UIView {
     func Decorate () {
-        self.backgroundColor = .lightGray
+        self.backgroundColor = .darkGray
     }
 }
 
 extension UIImageView {
-    func beautify () {
+    func beautify (image : UIImage) {
+        self.image = image
         self.contentMode = .scaleAspectFit
         self.clipsToBounds = true
     }
@@ -33,7 +34,7 @@ extension UILabel {
         } else {
             
            self.textAlignment = .center
-           self.backgroundColor = .lightGray
+           self.backgroundColor = .darkGray
            self.adjustsFontSizeToFitWidth = true
         
         }
@@ -43,15 +44,15 @@ extension UILabel {
 
 extension UITableViewCell {
     func Beautify() {
-        self.backgroundColor = .lightGray
-        self.layer.borderColor = UIColor.white.cgColor
+        self.backgroundColor = .darkGray
+        self.layer.borderColor = UIColor.blue.cgColor
         self.layer.borderWidth = 1
     }
 }
 
 extension UITableView {
     func Beautify() {
-        self.backgroundColor = .clear
+        self.backgroundColor = .darkGray
     }
 }
 
