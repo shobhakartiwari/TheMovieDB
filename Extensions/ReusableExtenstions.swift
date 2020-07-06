@@ -48,7 +48,7 @@ extension UITextView  {
         self.layoutIfNeeded()
         self.font = .boldSystemFont(ofSize: 21)
         self.layer.borderWidth = 1
-        self.layer.borderColor = UIColor.blue.cgColor
+        self.layer.borderColor = UIColor.magenta.cgColor
         self.textColor = .blue
     }
 }
@@ -56,7 +56,7 @@ extension UITextView  {
 extension UITableViewCell {
     func Beautify() {
         self.backgroundColor = .darkGray
-        self.layer.borderColor = UIColor.blue.cgColor
+        self.layer.borderColor = UIColor.magenta.cgColor
         self.layer.borderWidth = 1
     }
 }
